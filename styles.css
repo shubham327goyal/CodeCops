@@ -1,0 +1,79 @@
+body{
+    font-size: 16px;
+    color: black;
+}
+
+main{
+    padding: 4rem 10%;
+}
+
+button:focus {outline:0;
+}
+
+/* SERVICES */
+
+#services{
+    background-color: #F5F5F5;
+}
+
+#services h1{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    text-decoration-line:underline overline;
+    font-size: 3rem;
+}
+
+.card{
+    box-shadow: 2px 2px 20px #a5a4a4;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.card img{
+    margin-top: 1rem;
+    height: 15rem;
+}
+
+.card-text{
+    color: rgb(165, 165, 165);
+}
+
+.btn-primary{
+    background-color: transparent;
+    border-color: #DEDEDE;
+    border-width: 2px;
+    color: #999;
+    transition: 0.5s;
+}
+
+.btn-primary:hover{
+    border-color: #999;
+    color: #999;
+    background-color: transparent;
+}
+
+
+/* BLOGS */
+
+#blogs{
+    background-color: rgb(37, 36, 36);
+}
+
+#blogs h1{
+    font-family: 'Alfa Slab One', cursive;
+    color: rgb(132, 139, 129);
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+.date, .by-line{
+    color: rgb(104, 102, 102);
+}
+
+#blogs p{
+    color: whitesmoke;
+}
+
+.blog{
+    background-color: rgb(51, 51, 51);
+}

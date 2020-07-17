@@ -4,7 +4,7 @@ body{
 }
 
 main{
-    padding: 4rem 10%;
+    padding: 1.5rem 10%;
 }
 
 button:focus {outline:0;
@@ -24,9 +24,13 @@ button:focus {outline:0;
 }
 
 .card{
-    box-shadow: 2px 2px 20px #a5a4a4;
     background-color: white;
     transition: 0.5s;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 20px #a5a4a4;
 }
 
 .card img{
@@ -38,19 +42,15 @@ button:focus {outline:0;
     color: rgb(165, 165, 165);
 }
 
-.btn-primary{
-    background-color: transparent;
-    border-color: #DEDEDE;
-    border-width: 2px;
-    color: #999;
-    transition: 0.5s;
+.card a:link {
+    color: none;
+    text-decoration: none;
 }
 
-.btn-primary:hover{
-    border-color: #999;
-    color: #999;
-    background-color: transparent;
+.card a:hover{
+    color: none;
 }
+
 
 
 /* BLOGS */
@@ -64,6 +64,7 @@ button:focus {outline:0;
     color: rgb(132, 139, 129);
     font-size: 4rem;
     letter-spacing: 2px;
+    margin-bottom: 2.5rem;
 }
 
 .date, .by-line{

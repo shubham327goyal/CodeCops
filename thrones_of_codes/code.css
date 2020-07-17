@@ -1,0 +1,106 @@
+body{
+  background-color: black;
+  background-image: url('office.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color:darkslategray;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.logo{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+
+.vita{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.vita li{
+  list-style: none;
+  spacing: 50px;
+}
+
+.vita a{
+  color: white;
+  text-decoration: none;
+  letter-spacing:3px;
+  font-size: 14px;
+}
+
+.complain{
+  display: none;
+  cursor: pointer;
+}
+
+.complain div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+@media screen and (max-width:1024px){
+  .vita{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x: hidden;
+  }
+  .vita{
+     position: absolute;
+     right: 0px;
+     height: 92vh;
+     top: 8vh;
+     background-color:darkslategray;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 50%;
+     transform: translateX(100%);
+     transition: transform 0.5s ease-in;
+  }
+  .vita li{
+    opacity:80%;
+  }
+  .complain{
+    display: block;
+  }
+}
+
+.vita-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
